@@ -1,0 +1,445 @@
+/**
+ * Eric Meyer's Reset CSS v2.0 (http://meyerweb.com/eric/tools/css/reset/)
+ * http://cssreset.com
+ */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/*! responsive-nav.js 1.0.34 by @viljamis */
+.nav_container {
+  overflow: hidden;
+  padding: 2em 2em;
+  text-transform: uppercase; }
+
+.nav-collapse li {
+  padding: .4em; }
+  .nav-collapse li a {
+    text-decoration: none;
+    font-size: 1.5em; }
+    .nav-collapse li a:visited {
+      color: #d1d5d5; }
+
+.js .nav-collapse {
+  clip: rect(0 0 0 0);
+  max-height: 0;
+  position: absolute;
+  display: block;
+  overflow: hidden;
+  zoom: 1; }
+
+.nav-collapse.opened {
+  max-height: 9999px; }
+
+.nav-toggle {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+  text-decoration: none;
+  position: relative;
+  float: right;
+  background: #0aa2aa;
+  border: 2px solid white;
+  padding: 10px;
+  font-size: 1.25em;
+  color: white;
+  box-shadow: 4px 4px 0px 0px #aaa;
+  font-family: "alternate-gothic-no-3-d", sans-serif;
+  font-weight: 700;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  border-radius: 5px; }
+  .nav-toggle:hover {
+    left: 4px;
+    top: 4px;
+    box-shadow: none;
+    transition: all .4s ease-in-out;
+    -moz-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out; }
+
+@media screen and (min-width: 660px) {
+  .nav-collapse li {
+    display: inline-block; } }
+@media screen and (min-width: 760px) {
+  .nav-collapse ul {
+    float: right; }
+
+  .js .nav-collapse .button {
+    position: relative;
+    float: left;
+    background: #0aa2aa;
+    border: 2px solid white;
+    padding: 10px;
+    font-size: 1.25em;
+    color: white;
+    box-shadow: 4px 4px 0px 0px #aaa;
+    font-weight: 700;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    border-radius: 5px; }
+    .js .nav-collapse .button:hover {
+      left: 4px;
+      top: 4px;
+      box-shadow: none;
+      transition: all .4s ease-in-out;
+      -moz-transition: all .4s ease-in-out;
+      -webkit-transition: all .4s ease-in-out; }
+
+  .js .nav-collapse.closed {
+    max-height: none; }
+
+  .nav-toggle {
+    display: none; } }
+/* ========== text ========== */
+h1, h3 {
+  color: #dbc758; }
+
+h2 {
+  color: #f43d3d; }
+
+h4, h5, p, li {
+  color: #d1d5d5; }
+
+li a {
+  color: #d1d5d5; }
+  li a:visited {
+    color: #d1d5d5; }
+
+.about h3 {
+  color: #f43d3d; }
+.about a {
+  color: #d1d5d5;
+  text-decoration: none; }
+  .about a:hover {
+    font-weight: bold; }
+  .about a:visited {
+    color: #d1d5d5; }
+
+.menu_items p {
+  color: #aaa; }
+
+/* ========== backgrounds ========== */
+.main_bg {
+  background-color: rgba(57, 57, 57, 0.95); }
+
+body {
+  background-color: #d1d5d5; }
+
+header, footer {
+  background-color: #393939; }
+
+/*Family*/
+/*Size*/
+h1 {
+  font-family: "alternate-gothic-no-3-d", sans-serif;
+  font-size: 3.5em;
+  text-align: center;
+  text-shadow: 4px 5px 3px rgba(1, 1, 1, 0.4);
+  padding: 0.5em 0.5em; }
+
+h2 {
+  font-family: "alternate-gothic-no-3-d", sans-serif;
+  font-size: 4em;
+  text-align: center;
+  padding-bottom: .5em; }
+
+h3 {
+  font-family: "alternate-gothic-no-3-d", sans-serif;
+  font-size: 2.25em; }
+
+h4 {
+  font-family: "jaf-facitweb", sans-serif;
+  font-size: 1.1em;
+  font-weight: bold;
+  line-height: 1.5em;
+  width: 100%;
+  padding-top: 2em; }
+  h4 span {
+    float: right; }
+
+h5 {
+  font-family: "jaf-facitweb", sans-serif;
+  font-size: 1em;
+  line-height: 1.2em; }
+
+p {
+  font-family: "jaf-facitweb", sans-serif;
+  font-size: 1.1em;
+  font-weight: 200;
+  line-height: 1.75em; }
+  p span {
+    float: right; }
+
+li {
+  font-family: "alternate-gothic-no-3-d", sans-serif; }
+  li a {
+    font-family: "alternate-gothic-no-3-d", sans-serif; }
+
+h3 {
+  padding: .5em .75em; }
+
+h4, p {
+  padding-left: 1.25em;
+  padding-right: 1.5em; }
+
+.happy_hour {
+  text-align: center; }
+
+.about h3 {
+  font-size: 2em;
+  padding-left: 1em; }
+
+button {
+  font-family: "alternate-gothic-no-3-d", sans-serif; }
+
+.always h3, .sometimes h3 {
+  padding-bottom: 0; }
+
+.sometimes h3 {
+  padding-top: 2em; }
+
+.wine_item {
+  font-weight: bold; }
+
+/* ========== global ========== */
+.wrapper {
+  margin: 0 auto;
+  width: 80%;
+  max-width: 900px; }
+
+.col10 {
+  padding: 3em 0em; }
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+.sep_line {
+  width: 90%;
+  margin: 0 auto;
+  height: 0.1em;
+  background: #dbc758;
+  margin-top: 2em;
+  margin-bottom: 2em; }
+
+.section_description {
+  padding-bottom: 2em; }
+
+.wine_intro {
+  padding-bottom: 1em;
+  margin: 0 auto;
+  width: 90%; }
+
+.wine_list {
+  max-width: 600px;
+  margin: 0 auto; }
+
+.pizza_list {
+  max-width: 500px; }
+
+.beer_wine {
+  background-image: url(../images/beer.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  padding: 2em 0; }
+
+.food {
+  background-image: url(../images/brewery.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center center;
+  padding: 2em 0; }
+
+.pies {
+  background-image: url(../images/pizza.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center center;
+  padding: 2em 0; }
+
+footer {
+  overflow: hidden;
+  text-align: center; }
+  footer .location, footer .hours, footer .top_btn {
+    display: inline-block;
+    vertical-align: top;
+    padding: 2em 1em;
+    width: 50%; }
+
+.threes .location, .threes .hours, .threes .top_btn {
+  width: 33.333%; }
+
+button {
+  position: relative;
+  background: #0aa2aa;
+  border: 2px solid white;
+  padding: 10px;
+  font-size: 1.25em;
+  color: white;
+  box-shadow: 4px 4px 0px 0px #aaa;
+  font-weight: 700;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  border-radius: 5px;
+  text-decoration: none; }
+  button:hover {
+    left: 4px;
+    top: 4px;
+    box-shadow: none;
+    transition: all .4s ease-in-out;
+    -moz-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out; }
+
+.top_btn a {
+  text-decoration: none; }
+  .top_btn a:visited {
+    color: white; }
+
+.contact_btn {
+  float: right;
+  width: 100%; }
+
+.logo {
+  text-align: center;
+  padding-left: 2em;
+  padding-bottom: 2em; }
+
+/* ========== CONTACT PAGE ========== */
+.contact {
+  padding-top: 0;
+  padding-bottom: 0; }
+
+.contact_list {
+  padding-bottom: 1.5em; }
+  .contact_list a {
+    color: #d1d5d5;
+    text-decoration: none; }
+    .contact_list a:visited {
+      color: white; }
+    .contact_list a:hover {
+      font-weight: bold; }
+
+.map {
+  max-width: 100%;
+  padding-bottom: 1em;
+  padding-left: 1em;
+  padding-right: 1em; }
+
+.contact_page {
+  background-image: url(../images/dog.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center center;
+  background-repeat: no-repeat;
+  padding: 2em 0; }
+
+/* ========== HOME PAGE ========== */
+.home {
+  background-image: url(../images/people.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center center;
+  padding: 2em 0; }
+
+.about {
+  padding: 2em 0; }
+  .about:last-of-type {
+    margin-top: 2em; }
+
+/* =============== medium =============== */
+@media screen and (min-width: 760px) {
+  h1 {
+    font-size: 4.5em; }
+
+  .col_md {
+    width: 45%;
+    margin-right: 8%;
+    display: inline-block;
+    vertical-align: top; }
+    .col_md:last-of-type {
+      margin-right: 0; } }
+/* ================ large =============== */
+@media screen and (min-width: 900px) {
+  .logo {
+    float: left;
+    padding-left: 0;
+    padding-bottom: 0; }
+
+  .col4 {
+    width: 32.4%;
+    margin-right: 16.2%;
+    display: inline-block;
+    vertical-align: top; }
+
+  .col5 {
+    width: 44.55%;
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 10%; }
+    .col5:last-of-type {
+      margin-right: 0; }
+
+  h4, p {
+    padding-left: 2.5em;
+    padding-right: 2.5em; }
+
+  h3 {
+    padding-left: 1em;
+    font-size: 2.75em; }
+
+  .about h3 {
+    padding-left: 1.4em; }
+
+  .map {
+    width: 100%;
+    padding-right: 0; } }
+
+/*# sourceMappingURL=main.css.map */
