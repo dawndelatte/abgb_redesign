@@ -81,7 +81,7 @@ table {
   text-decoration: none;
   position: relative;
   float: right;
-  background: #0aa2aa;
+  background: #0762B7;
   border: 2px solid white;
   padding: 10px;
   font-size: 1.25em;
@@ -110,7 +110,7 @@ table {
   .js .nav-collapse .button {
     position: relative;
     float: left;
-    background: #0aa2aa;
+    background: #0762B7;
     border: 2px solid white;
     padding: 10px;
     font-size: 1.25em;
@@ -318,7 +318,7 @@ footer {
 
 button {
   position: relative;
-  background: #0aa2aa;
+  background: #0762B7;
   border: 2px solid white;
   padding: 10px;
   font-size: 1.25em;
@@ -329,6 +329,10 @@ button {
   text-transform: uppercase;
   border-radius: 5px;
   text-decoration: none; }
+  button a {
+    color: white; }
+    button a:visited {
+      color: white; }
   button:hover {
     left: 4px;
     top: 4px;

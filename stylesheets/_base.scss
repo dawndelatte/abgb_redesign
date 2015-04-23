@@ -89,7 +89,7 @@ footer {
 
 button {
     position: relative;
-    background: #0aa2aa;
+    background: #0762B7;
     border: 2px solid white;
     padding: 10px;
     font-size: 1.25em;
@@ -100,6 +100,7 @@ button {
     text-transform: uppercase;
     border-radius: 5px;
     text-decoration: none;
+    a {color:white; &:visited {color:white;}}
     &:hover {
         left: 4px;
         top: 4px;
