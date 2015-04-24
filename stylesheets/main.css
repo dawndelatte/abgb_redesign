@@ -81,7 +81,7 @@ table {
   text-decoration: none;
   position: relative;
   float: right;
-  background: #0762B7;
+  background: #1F6CB3;
   border: 2px solid white;
   padding: 10px;
   font-size: 1.25em;
@@ -110,7 +110,7 @@ table {
   .js .nav-collapse .button {
     position: relative;
     float: left;
-    background: #0762B7;
+    background: #1F6CB3;
     border: 2px solid white;
     padding: 10px;
     font-size: 1.25em;
@@ -228,6 +228,11 @@ h4, p {
 .happy_hour {
   text-align: center; }
 
+.special {
+  font-size: 4em;
+  text-align: center;
+  padding-bottom: 0; }
+
 .about h3 {
   font-size: 2em;
   padding-left: 1em; }
@@ -318,7 +323,7 @@ footer {
 
 button {
   position: relative;
-  background: #0762B7;
+  background: #1F6CB3;
   border: 2px solid white;
   padding: 10px;
   font-size: 1.25em;
