@@ -4,6 +4,7 @@
     overflow: hidden;
     padding: 2em 2em;
     text-transform: uppercase;
+    margin: 0 auto;
 }
 
 .nav-collapse li {
@@ -38,28 +39,56 @@
     -ms-user-select: none;
     -o-user-select: none;
     user-select: none;
+    font-family: "alternate-gothic-no-3-d", sans-serif;
+    font-weight: 700;
+    background: #1F6CB3;
     text-decoration: none;
     position: relative;
     float: right;
-    background: #1F6CB3;
-    border: 2px solid white;
-    padding: 10px;
+    padding: 10px 20px;
     font-size: 1.25em;
     color: white;
-    box-shadow: 4px 4px 0px 0px #aaa;
-    font-family: "alternate-gothic-no-3-d", sans-serif;
-    font-weight: 700;
-    letter-spacing: 3px;
+    letter-spacing: 2px;
     text-transform: uppercase;
-    border-radius: 5px;
-    &:hover {
-        left: 4px;
-        top: 4px;
-        box-shadow: none;
-        transition: all .4s ease-in-out;
-        -moz-transition: all .4s ease-in-out;
-        -webkit-transition: all .4s ease-in-out;
+    border-radius: 6px;
+    z-index: 3;
+    border: 2px solid white;
+
+    &:hover {border:2px solid transparent;}
+
+    &:hover:after {
+    border: 2px solid white;
+    border-radius: 6px;
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    left: -7px;
+    top: -7px;
     }
+
+    // text-decoration: none;
+    // position: relative;
+    // float: right;
+    // background: #1F6CB3;
+    // border: 2px solid white;
+    // padding: 10px;
+    // font-size: 1.25em;
+    // color: white;
+    // box-shadow: 4px 4px 0px 0px #aaa;
+    // font-family: "alternate-gothic-no-3-d", sans-serif;
+    // font-weight: 700;
+    // letter-spacing: 3px;
+    // text-transform: uppercase;
+    // border-radius: 5px;
+    // &:hover {
+    //     left: 4px;
+    //     top: 4px;
+    //     box-shadow: none;
+    //     transition: all .4s ease-in-out;
+    //     -moz-transition: all .4s ease-in-out;
+    //     -webkit-transition: all .4s ease-in-out;
+    // }
 }
 
 @media screen and (min-width: 660px) {
@@ -69,33 +98,63 @@
 }
 
 @media screen and (min-width: 760px) {
+
+    .nav_container {display: table;}
     
     .nav-collapse ul {
-        float: right;
+        min-width: 713px;
     }
     .js .nav-collapse {
+
         .button {
+            background: #1F6CB3;
+            text-decoration: none;
             position: relative;
             float: left;
-            background: #1F6CB3;
-            border: 2px solid white;
-            padding: 10px;
+            padding: 10px 20px;
             font-size: 1.25em;
             color: white;
-            box-shadow: 4px 4px 0px 0px #aaa;
-            font-weight: 700;
-            letter-spacing: 3px;
+            letter-spacing: 2px;
             text-transform: uppercase;
-            border-radius: 5px;
-            &:hover {
-                left: 4px;
-                top: 4px;
-                box-shadow: none;
-                transition: all .4s ease-in-out;
-                -moz-transition: all .4s ease-in-out;
-                -webkit-transition: all .4s ease-in-out;
-            }
-        }
+            border-radius: 6px;
+            z-index: 3;
+            border: 2px solid white;
+        
+            &:hover {border:2px solid transparent;}
+        
+          &:hover:after {
+          border: 2px solid white;
+          border-radius: 6px;
+          position: absolute;
+          content: "";
+          width: 100%;
+          height: 100%;
+          left: -7px;
+          top: -7px;
+          }
+      }
+        // .button {
+        //     position: relative;
+        //     float: left;
+        //     background: #1F6CB3;
+        //     border: 2px solid white;
+        //     padding: 10px;
+        //     font-size: 1.25em;
+        //     color: white;
+        //     box-shadow: 4px 4px 0px 0px #aaa;
+        //     font-weight: 700;
+        //     letter-spacing: 3px;
+        //     text-transform: uppercase;
+        //     border-radius: 5px;
+        //     &:hover {
+        //         left: 4px;
+        //         top: 4px;
+        //         box-shadow: none;
+        //         transition: all .4s ease-in-out;
+        //         -moz-transition: all .4s ease-in-out;
+        //         -webkit-transition: all .4s ease-in-out;
+        //     }
+        // }
     }
     .js .nav-collapse.closed {
         max-height: none;

@@ -49,7 +49,8 @@ table {
 .nav_container {
   overflow: hidden;
   padding: 2em 2em;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  margin: 0 auto; }
 
 .nav-collapse li {
   padding: .4em; }
@@ -78,55 +79,66 @@ table {
   -ms-user-select: none;
   -o-user-select: none;
   user-select: none;
+  font-family: "alternate-gothic-no-3-d", sans-serif;
+  font-weight: 700;
+  background: #1F6CB3;
   text-decoration: none;
   position: relative;
   float: right;
-  background: #1F6CB3;
-  border: 2px solid white;
-  padding: 10px;
+  padding: 10px 20px;
   font-size: 1.25em;
   color: white;
-  box-shadow: 4px 4px 0px 0px #aaa;
-  font-family: "alternate-gothic-no-3-d", sans-serif;
-  font-weight: 700;
-  letter-spacing: 3px;
+  letter-spacing: 2px;
   text-transform: uppercase;
-  border-radius: 5px; }
+  border-radius: 6px;
+  z-index: 3;
+  border: 2px solid white; }
   .nav-toggle:hover {
-    left: 4px;
-    top: 4px;
-    box-shadow: none;
-    transition: all .4s ease-in-out;
-    -moz-transition: all .4s ease-in-out;
-    -webkit-transition: all .4s ease-in-out; }
+    border: 2px solid transparent; }
+  .nav-toggle:hover:after {
+    border: 2px solid white;
+    border-radius: 6px;
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    left: -7px;
+    top: -7px; }
 
 @media screen and (min-width: 660px) {
   .nav-collapse li {
     display: inline-block; } }
 @media screen and (min-width: 760px) {
+  .nav_container {
+    display: table; }
+
   .nav-collapse ul {
-    float: right; }
+    min-width: 713px; }
 
   .js .nav-collapse .button {
+    background: #1F6CB3;
+    text-decoration: none;
     position: relative;
     float: left;
-    background: #1F6CB3;
-    border: 2px solid white;
-    padding: 10px;
+    padding: 10px 20px;
     font-size: 1.25em;
     color: white;
-    box-shadow: 4px 4px 0px 0px #aaa;
-    font-weight: 700;
-    letter-spacing: 3px;
+    letter-spacing: 2px;
     text-transform: uppercase;
-    border-radius: 5px; }
+    border-radius: 6px;
+    z-index: 3;
+    border: 2px solid white; }
     .js .nav-collapse .button:hover {
-      left: 4px;
-      top: 4px;
-      box-shadow: none;
-      transition: all .4s ease-in-out;
-      -moz-transition: all .4s ease-in-out;
-      -webkit-transition: all .4s ease-in-out; }
+      border: 2px solid transparent; }
+    .js .nav-collapse .button:hover:after {
+      border: 2px solid white;
+      border-radius: 6px;
+      position: absolute;
+      content: "";
+      width: 100%;
+      height: 100%;
+      left: -7px;
+      top: -7px; }
 
   .js .nav-collapse.closed {
     max-height: none; }
@@ -250,6 +262,16 @@ button {
   font-weight: bold; }
 
 /* ========== global ========== */
+header {
+  overflow: hidden; }
+
+.logo {
+  width: 30%;
+  padding-top: 2em;
+  margin: 0 auto; }
+  .logo img {
+    max-width: 100%; }
+
 .wrapper {
   margin: 0 auto;
   width: 80%;
@@ -322,29 +344,28 @@ footer {
   width: 33.333%; }
 
 button {
-  position: relative;
   background: #1F6CB3;
-  border: 2px solid white;
-  padding: 10px;
+  text-decoration: none;
+  position: relative;
+  padding: 10px 20px;
   font-size: 1.25em;
   color: white;
-  box-shadow: 4px 4px 0px 0px #aaa;
-  font-weight: 700;
-  letter-spacing: 3px;
+  letter-spacing: 2px;
   text-transform: uppercase;
-  border-radius: 5px;
-  text-decoration: none; }
-  button a {
-    color: white; }
-    button a:visited {
-      color: white; }
+  border-radius: 6px;
+  border: 2px solid white;
+  box-shadow: none; }
   button:hover {
-    left: 4px;
-    top: 4px;
-    box-shadow: none;
-    transition: all .4s ease-in-out;
-    -moz-transition: all .4s ease-in-out;
-    -webkit-transition: all .4s ease-in-out; }
+    border: 2px solid transparent; }
+  button:hover:after {
+    border: 2px solid white;
+    border-radius: 6px;
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    left: -7px;
+    top: -7px; }
 
 .top_btn a {
   text-decoration: none; }
@@ -354,11 +375,6 @@ button {
 .contact_btn {
   float: right;
   width: 100%; }
-
-.logo {
-  text-align: center;
-  padding-left: 2em;
-  padding-bottom: 2em; }
 
 /* ========== CONTACT PAGE ========== */
 .contact {
@@ -417,11 +433,6 @@ button {
       margin-right: 0; } }
 /* ================ large =============== */
 @media screen and (min-width: 900px) {
-  .logo {
-    float: left;
-    padding-left: 0;
-    padding-bottom: 0; }
-
   .col4 {
     width: 32.4%;
     margin-right: 16.2%;
@@ -450,5 +461,9 @@ button {
   .map {
     width: 100%;
     padding-right: 0; } }
+@media screen and (min-width: 1100px) {
+  .logo {
+    float: left;
+    padding: 2em; } }
 
 /*# sourceMappingURL=main.css.map */
