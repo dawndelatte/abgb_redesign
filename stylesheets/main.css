@@ -354,7 +354,11 @@ button {
   text-transform: uppercase;
   border-radius: 6px;
   border: 2px solid white;
-  box-shadow: none; }
+  outline: none; }
+  button a {
+    color: white; }
+    button a:visited {
+      color: white; }
   button:hover {
     border: 2px solid transparent; }
   button:hover:after {

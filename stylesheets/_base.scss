@@ -110,7 +110,9 @@ button {
             text-transform: uppercase;
             border-radius: 6px;
             border: 2px solid white;
-            box-shadow: none;
+            outline: none;
+
+            a {color: white; &:visited {color:white;}}
         
             &:hover {border:2px solid transparent;}
         
